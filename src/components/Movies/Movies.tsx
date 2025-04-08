@@ -23,24 +23,24 @@ export default function Movies() {
   };
 
   return (
-    <div className="flex flex-col items-center gap-4 p-4 border rounded-lg shadow-lg max-w-sm mx-auto">
-      <h2 className="text-xl font-bold">{movies[currentIndex].title}</h2>
+    <div className="flex flex-col bg-slate-500 items-center gap-4 p-4 border rounded-lg shadow-lg max-w-sm mx-auto">
+      <h2 className="text-xl text-cyan-500 font-bold">{movies[currentIndex].title}</h2>
 
-      <p className="text-gray-600">Ano: {movies[currentIndex].year}</p>
+      <p className="text-gray-200">Ano: {movies[currentIndex].year}</p>
 
-      <p className="text-gray-500">Gênero: {movies[currentIndex].genre}</p>
+      <p className="text-gray-300">Gênero: {movies[currentIndex].genre}</p>
 
       <div className="flex gap-4">
         <button
           onClick={prevMovie}
-          className="px-4 py-2 bg-gray-300 rounded-lg hover:bg-gray-400"
+          className="px-4 py-2 bg-gray-300 rounded-lg hover:bg-gray-400 transition-colors duration-300"
         >
           {"<"}
         </button>
 
         <button
           onClick={nextMovie}
-          className="px-4 py-2 bg-gray-300 rounded-lg hover:bg-gray-400"
+          className="px-4 py-2 bg-gray-300 rounded-lg hover:bg-gray-400 transition-colors duration-300"
         >
           {">"}
         </button>
